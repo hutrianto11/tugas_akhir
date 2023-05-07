@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <style>
+      body {
+        background: #0d6efd;
+      }
+      h3 {
+        text-align: center;
+      }
+
+      #form {
+        background-color: white;
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 5%;
+      }
+      .ask {
+        text-align: center;
+        padding-top: 5px;
+      }
+      .ask a {
+        text-decoration: none;
+      }
+    </style>
+    <title>Signup</title>
+  </head>
+  <body>
+    <div class="row">
+      <div id="form" class="col-8 col-md-4 mx-auto">
+        <h3 id="form__head" class="mb-4">Registration Form</h3>
+        <form id="newform" action="#" class="needs-validation" novalidate>
+          <div class="form-group p-1">
+            <label for="username"> Username </label>
+
+            <input type="text" class="form-control" id="username" name="username" required />
+
+            <!-- <div class="invalid-feedback">username can`t username cannot be blank or have space</div>
+            <div class="valid-feedback">Looks Good</div> -->
+          </div>
+          <div class="form-group p-1">
+            <label for="phone number"> Phone Number </label>
+
+            <input type="number" class="form-control" id="username" name="username" required />
+
+            <!-- <div class="invalid-feedback">username can`t username cannot be blank or have space</div>
+            <div class="valid-feedback">Looks Good</div> -->
+          </div>
+          <div class="form-group p-1">
+            <label for="email"> Email </label>
+            <input type="email" class="form-control" name="email" id="email" required />
+            <div id="email-validation" class="invalid-feedback">Please Check Mail again.</div>
+          </div>
+          <div class="form-group p-1">
+            <label for="full address"> Full Address </label>
+
+            <input type="text" class="form-control" id="username" name="username" required />
+
+            <!-- <div class="invalid-feedback">username can`t username cannot be blank or have space</div>
+            <div class="valid-feedback">Looks Good</div> -->
+          </div>
+          <div class="form-group p-1">
+            <label for="password"> Password </label>
+            <input type="password" class="form-control" name="password" id="password" required />
+            <div class="invalid-feedback">Please make sure your password contains at least (a Capital letter, a number and a special charcter).</div>
+          </div>
+          <div class="form-group p-1">
+            <label for="confirm password"> Confirm Password </label>
+            <input type="password" class="form-control" name="confirm password" id="confirm password" required />
+            <div class="invalid-feedback">Please make sure your password contains at least (a Capital letter, a number and a special charcter).</div>
+          </div>
+          <button type="submit" class="mt-4 d-block w-100 btn btn-warning">Submit</button>
+          <div class="ask">
+            <p>Already Account? <a href="./login.html">Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
